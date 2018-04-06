@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1500 1200" style="enable-background:new 0 0 1500 1500;" xml:space="preserve">
+  <style type="text/css"><![CDATA[
+    .verde { fill:#3e90b7; stroke:#888888; stroke-width:2 }
+    .verde2 { fill:#00cc00; stroke:#111111; stroke-width:1 }
+    .verde2sombra { fill:#aaccaa; stroke:#111111; stroke-width:1 }
+    .verde2claro { fill:#bbffbb; stroke:#111111; stroke-width:0 }
+    .blanco { fill:#FFFFFF; stroke:#888888; stroke-width:2 }
+    .negro { fill:#111111; stroke:#111111; stroke-width:0 }
+    .plomoclaro { fill:#111111; stroke:#111111; stroke-width:0 }
+    .plomo { fill:#222222; stroke:#111111; stroke-width:0 }
+    .plomo2 { stroke:#000000; stroke-width:3 }
+    .balon { stroke:#AAAAAA; stroke-width:10 }
+    .franjablanca { stroke:#AAAAAA; stroke-width:4 }
+    .franjanegra { stroke:#111111; stroke-width:0 }
+
+  ]]></style>
+<g>
+  <circle class="verde" cx="800" cy="595" r="575" />
+  <g>
+      <circle class="blanco" cx="800" cy="595" r="485" />
+    <g>
+      <circle class="verde" cx="800" cy="595" r="445" />
+        <g>
+            <defs>
+            <radialGradient id="rad1"
+               cx="50%" cy="50%" r="75%" fx="40%" fy="20%">
+               <stop offset="0" stop-color="#444444"/>
+               <stop offset="1" stop-color="#000000"/>
+            </radialGradient>
+            <radialGradient id="rad2"
+               cx="50%" cy="50%" r="75%" fx="40%" fy="20%">
+               <stop offset="0" stop-color="#DDDDDD"/>
+               <stop offset="1" stop-color="#FFFFFF"/>
+            </radialGradient>
+            <linearGradient id="grad1"
+             x1="100%" y1="45%" x2="0%" y2="70%">
+            <stop offset="0" stop-color="silver"/>
+            <stop offset="0.1" stop-color="#AAAAAA"/>
+            <stop offset="0.3" stop-color="#333333"/>
+            <stop offset="0.7" stop-color="#555555"/>
+            <stop offset="1" stop-color="#333333"/>
+            </linearGradient>
+            <linearGradient id="grad2"
+             x1="100%" y1="35%" x2="0%" y2="85%">
+            <stop offset="0" stop-color="#333333"/>
+            <stop offset="0.1" stop-color="#333333"/>
+            <stop offset="0.3" stop-color="#333333"/>
+            <stop offset="0.7" stop-color="#444444"/>
+            <stop offset="1" stop-color="#333333"/>
+            </linearGradient>
+            <linearGradient id="grad3"
+             x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0" stop-color="#111111"/>
+            <stop offset="0.3" stop-color="#111111"/>
+            <stop offset="0.6" stop-color="#111111"/>
+            <stop offset="0.8" stop-color="#dddddd"/>
+            <stop offset="1" stop-color="#aaaaaa"/>
+            </linearGradient>
+            </defs>
+            <circle fill="url(#rad1)" cx="1045" cy="560" r="425" />
+            <g>
+            <path fill="url(#rad2)" class="franjablanca" d="M627,633 
+           A445,445 0 0,1 705,305 L 743,291 Q727,339 741,383 Q703,461 691,557 Q643,585 627,633"/>    
+            <path fill="url(#rad2)" class="franjablanca" d="M627,633 Q643,585 691,557 Q737,613 807,653 Q795,745 850,823 L 791,877 Q758,872 721,840 A445,445 0 0,1 627,633"/>
+            <path fill="url(#rad2)" class="franjablanca" d="M721,840 Q758,872 791,877 A445,445 0 0,1 844,938 Q812,915 721,840"/>        
+            <path fill="url(#rad2)" class="franjablanca" d="M959,980 Q1013,982 1053,961 Q1151,979 1289,909 A450,450 0 0,1 959,980"/>
+            <path fill="url(#rad2)" class="franjablanca" d="M850,823 Q795,745 807,653 L 933,537 L 1126,602 L 1165,763 Q1115,846 1026,886 Q928,895 850,823"/>   
+            <path fill="url(#rad2)" class="franjablanca" d="M1053,961 L 1026,886 Q1115,846 1165,763 Q1278,769 1314,750 Q1342,789 1344,844 Q1320,864 1289,909 Q1151,979 1053,961"/>
+            <path fill="url(#rad2)" class="franjablanca" d="M1344,844 Q1342,789 1314,750 Q1370,645 1372,578 Q1419,560 1444,517 L 1468,533 A450,450 0 0,1 1372,830 Q1357,837 1344,844"/>
+            <path fill="url(#rad2)" class="franjablanca" d="M1444,517 Q1419,560 1372,578 Q1331,518 1257,485 Q1268,388 1211,309 L 1285,257 Q1378,294 1452,438 L 1444,517"/> 
+            <path fill="url(#rad2)" class="franjablanca" d="M933,537 L 894,365 Q943,288 1039,248 Q1133,250 1211,309 Q1268,388 1257,485 Q1172,518 1126,602 L 933,537"/> 
+            <path fill="url(#rad2)" class="franjablanca" d="M741,383 Q727,339 743,291 Q755,257 789,224 A450,450 0 0,1 897,164 Q965,154 1013,168 L 1039,248 Q943,288 894,365 Q808,354 741,383"/> 
+            <path fill="url(#rad2)" class="franjablanca" d="M1013,168 Q965,154 897,164 A428,428 0 0,1 1452,438 Q1378,294 1285,257 Q1199,109 1013,168"/> 
+                <g>
+                    <circle class="balon" fill="none" cx="1045" cy="560" r="425" />
+                    <g> 
+                        <path fill="url(#grad1)" d="M561,439 Q610,622 718,775 L 628,728 Q584,697 505,703 Q454,701 389,718 Q343,726 324,691 Q303,660 291,614 Q287,595 268,579 Q221,539 192,497 Q179,481 182,460 Q195,444 211,440 Q333,392 561,439"/> 
+                        <path class="plomoclaro" d="M718,775 L 628,728 Q584,697 505,703 Q454,701 389,718 Q343,726 324,691 Q303,660 291,614 Q287,595 268,579 Q221,539 192,497 Q178,480 182,460 Q171,488 190,509 Q221,549 268,589 Q284,605 288,624 Q303,670 324,701 Q343,736 389,728 Q454,711 505,713 Q582,709 628,738 L 718,785 L 718,775"/> 
+                        <path fill="url(#grad2)" d="M182,460 Q171,488 190,509 Q221,549 268,589 Q284,605 288,624 Q303,670 324,701 Q343,736 389,728 Q454,711 505,713 Q582,709 628,738 L 718,785 Q835,933 805,1001 Q517,907 322,760 Q261,686 210,654 Q135,595 169,494 Q184,456 165,442 Q140,415 127,367 Q166,346 222,280 Q234,265 251,269 Q205,329 205,346 Q199,410 278,389 Q290,388 318,377 Q363,356 389,376 Q390,385 408,417 Q244,425 211,440 Q195,444 182,460"/>
+                        <path class="plomoclaro" d="M251,269 Q205,329 205,346 Q199,410 278,389 Q208,400 219,344 Q263,283 251,269"/>
+                        <path class="negro" d="M278,389 Q208,400 219,344 Q263,283 251,269 Q260,278 262,289 Q304,289 311,295 Q270,354 278,389"/>
+                        <path class="plomo" d="M311,295 Q270,354 278,389 Q290,388 318,377 Q325,308 311,295"/>
+                        <path  fill="url(#grad3)" d="M805,1001 Q517,907 322,760 Q261,686 210,654 Q135,595 169,494 Q184,456 165,442 Q140,415 127,367 Q68,417 38,552 L 18,605 Q23,620 50,636 L 89,603 L 74,658 Q93,681 129,695 Q178,651 202,673 Q195,689 196,697 Q213,719 233,734 L 257,707 Q276,720 283,750 L 269,790 Q281,811 303,820 L 331,807 Q339,813 349,815 Q337,832 336,859 Q350,880 366,886 L 419,870 Q428,882 446,895 L 438,934 L 486,960 Q507,953 532,944 Q546,958 575,968 L 577,998 L 629,1012 Q644,1010 660,997 L679,1005 Q671,1016 676,1027 L 715,1040 Q737,1029 739,1020 Q793,1029 805,1001"/>
+                    </g>
+                </g>
+            </g>
+            
+        </g>
+    </g>    
+  </g>  
+</g>
+            <path fill="none" class="franjanegra" d="M844,938 Q812,915 791,877 L 850,823 Q928,895 1026,886 L 1053,961 Q1013,982 959,980 A445,445 0 0,1 844,938"/>
+  
+
+</svg>

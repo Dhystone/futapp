@@ -1,0 +1,82 @@
+$(document).ready(function(){
+	$("#cf-mvl-treenavbutton").click(function(){		
+		if ($("#cf-mvl-treenavbutton").hasClass("active")) {
+		$("#cf-primary-treenav").addClass('inactive');
+		$("#cf-primary-treenav").removeClass('subactive');
+		$("#cf-secondary-treenav").removeClass('active');
+		$("#cf-mvl-treenavbutton").removeClass("active");
+		$("#cf-mvl-treenav").removeClass("open");
+		$(".submenu1").removeClass("active");		
+		$(".submenu2").removeClass("active");
+		$(".submenu3").removeClass("active");
+		$(".submenu4").removeClass("active");
+		$(".submenu5").removeClass("active");
+		$(".submenu6").removeClass("active");			
+		}else{
+		$("#cf-primary-treenav").removeClass('inactive');
+		$("#cf-mvl-treenavbutton").addClass("active");
+		$("#cf-mvl-treenav").addClass("open");
+		}
+	});		
+	$(".cf-mvl-treenav-in").click(function(){
+		$("#cf-secondary-treenav").addClass('active');
+	});	
+	$(".cf-back-treenav").click(function(){
+		$("#cf-primary-treenav").removeClass('inactive');
+		$("#cf-primary-treenav").removeClass('subactive');
+		$("#cf-secondary-treenav").removeClass('active');		
+		$("#submenu1").removeClass("active");
+		$("#submenu2").removeClass("active");
+		$("#submenu3").removeClass("active");
+		$("#submenu4").removeClass("active");
+		$("#submenu5").removeClass("active");
+		$("#submenu6").removeClass("active");
+		$(".submenu1").removeClass("active");		
+		$(".submenu2").removeClass("active");
+		$(".submenu3").removeClass("active");
+		$(".submenu4").removeClass("active");
+		$(".submenu5").removeClass("active");
+		$(".submenu6").removeClass("active");		
+	});	
+	$(".submenu1").click(function(){
+		$(".mvl-treenav-in").removeClass("active");//falta formato active
+		$(".submenu").addClass("inactive");
+		$("#submenu1").removeClass("inactive");	
+		$("#cf-primary-treenav").addClass('subactive');
+		$(".submenu1").addClass("active");		
+		$(".submenu2").removeClass("active");
+		$(".submenu3").removeClass("active");
+		$(".submenu4").removeClass("active");
+		$(".submenu5").removeClass("active");
+		$(".submenu6").removeClass("active");
+	});		
+	$(".submenu2").click(function(){
+		$(".mvl-treenav-in").removeClass("active");
+		$(".submenu").addClass("inactive");
+		$("#submenu2").removeClass("inactive");		
+		$("#cf-primary-treenav").addClass('subactive');
+		if ($(".submenu2").hasClass("active")) {
+		$(".submenu2").removeClass("active");	
+		}else{
+		$(".submenu2").addClass("active");		
+		}	
+		$(".submenu1").removeClass("active");
+		$(".submenu3").removeClass("active");
+		$(".submenu4").removeClass("active");
+		$(".submenu5").removeClass("active");
+		$(".submenu6").removeClass("active");		
+	});		
+
+        $(".cf-display-panel-social-login").click(function(){
+            if ($("#cf-panel-social-login").hasClass("inactive")) {
+                $("#cf-panel-social-login").removeClass('inactive');
+                $("#arrow-social").removeClass('arrow-down');
+                $("#arrow-social").addClass('arrow-up');
+            }else{
+                $("#cf-panel-social-login").addClass('inactive');    
+                $("#arrow-social").removeClass('arrow-up');
+                $("#arrow-social").addClass('arrow-down');
+            }    
+        });    
+
+});	

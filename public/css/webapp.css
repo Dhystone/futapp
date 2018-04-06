@@ -1,0 +1,836 @@
+        .cf-main-header{
+            border-bottom: 1px solid #bbb;
+            background: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+            border-bottom: 2px solid #eee;
+        }
+        .cf-navbar-brand{
+            display: none;
+        }
+        .cf-logo{
+            min-width: 220px;
+        }
+        .cf-text-logo{
+            padding-left: 2px;          
+        }
+        .cf-logo-name{
+        font-size: 1.2rem;
+        margin-bottom: -5px;
+        color: #3e90b7;
+        }
+        .cf-logo-slogan{
+        font-size: 0.7rem;
+        }
+        .cf-menu{
+            width: 100%;
+            margin-top: -5px;
+            margin-bottom: -5px;
+        }
+        .cf-main-banner{
+            padding-top: 6px;           
+        }       
+        .cf-dsk-top-menu{
+            font-size: 0.8rem;
+        }
+        .cf-dsk-top-menu a{
+            text-decoration: none;
+            color: #3e90b7;
+        }   
+        .cf-dsk-top-menu a:hover{           
+            color: #666;
+        }   
+        .cf-dsk-main-menu a{
+            text-decoration: none;
+            color: #888;
+        }
+        .cf-dsk-main-menu a:hover{
+            color: #3e90b7;
+        }
+        .cf-navbar-brand{
+            font-size: 1.5rem;
+        }
+        #cf-mvl-treenavbutton.active{
+            background:#aaa;
+        }
+/*        #cf-mvl-treenavbutton .cf-btn-menu{
+            background-image: url("{{ asset('btn-menu-gray.svg') }}");
+        }
+        #cf-mvl-treenavbutton.active .cf-btn-menu{
+            background-image: url("{{ asset('btn-menu-white.svg') }}");
+        }       
+*/
+        .cf-border-btn{
+            border:1px solid rgba(0,0,0,0.1);
+        }
+        .logo a{
+            color: #007bff;
+        }
+        ul.d-inline-flex>li{
+            display: -ms-inline-flexbox !important;
+            display: inline-flex !important;    
+        }
+        ul.cf-separate-items-thin>li:after{
+            color: #999;
+            content: "|";
+            padding: 0.25rem 0rem;  
+        }
+        ul.cf-nav-thin>li>a{
+            padding: 0.25rem 0.5rem;
+        }   
+        .cf-under>li{
+            padding-bottom: 10px;
+        }
+        .cf-under>li:hover{
+            padding-bottom: 6px;            
+            border-bottom: 4px solid #3e90b7;
+        }
+        button#cf-mvl-treenavbutton{
+            margin-bottom: 6px;
+        }
+        .show-lg{
+            display: none !important;
+        }
+        .hide-lg{
+            display: inline-flex !important;
+        }
+
+    .validate_msg{
+        margin-bottom: 0px;
+        font-size: 13px;
+        color:#FC642D;
+        text-align: left;
+    }
+    .validate_ok{
+        font-size: 13px;    
+        text-align: left;
+        display: none;
+         margin-top: -10px;
+             margin-bottom: 5px;
+    }
+    .msg_ok{
+        color:#00A699 !important;
+    }
+    .validate_pass{
+
+        text-align: left;
+            margin-top: -10px;
+                margin-bottom: 5px;
+                padding-bottom: 10px;
+        display: none;*/
+    }
+    .ocultar{
+        display: none !important;
+    }
+    .mostrar{
+        display: block !important;
+    }
+
+    #cf-mvl-treenavbutton .cf-btn-menu{
+        background-image: url("{{ asset('btn-menu-gray.svg') }}");
+    }
+    #cf-mvl-treenavbutton.active .cf-btn-menu{
+        background-image: url("{{ asset('btn-menu-white.svg') }}");
+    }   
+
+        @media screen and (min-width: 576px){
+            .cf-logo{
+                min-width: 245px;
+            }           
+            .cf-main-header{
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+            .cf-navbar-brand-mvl{
+                display: none;
+            }
+            .cf-navbar-brand{
+                display: block;
+            }
+            .cf-logo-name{
+            font-size: 1.4rem;
+            margin-bottom: -5px;
+            }
+            .cf-logo-slogan{
+            font-size: 0.8rem;
+            }
+        }               
+        @media screen and (min-width: 960px){
+            .container-fix-w720{
+                max-width: 720px !important;
+            }
+            .cf-main-header{
+                padding-left: 25px !important;
+                padding-right: 25px !important;
+            }
+            .hide-lg{
+                display: none !important;
+            }
+            .show-lg{
+                display: inline-flex !important;
+            }
+        }
+
+#cf-mvl-treenav{
+    display: none;
+    left: 0;
+} 
+#cf-mvl-treenav.open{
+    display: block;
+}       
+.cf-treenav{
+    background-color: white;
+    width: 100%;    
+    min-width: 288px;    
+    border-right: 1px solid #ececec;   
+    bottom: auto;
+    overflow-y: auto;
+    max-height: 100%;
+    position: absolute;
+}   
+.cf-h-mvl-top-menu{
+    border-bottom: 1px solid #ececec;
+    padding: 7px 20px;
+}
+.cf-h-mvl-top-menu a{
+    text-decoration: none;
+    color: #3e90b7;
+}
+.cf-h-mvl-top-menu a:hover{
+    color: #777;
+}
+.cf-item-mvl-menu{
+    border-bottom: 1px solid #ececec;
+}
+.cf-mvl-treenav-in{
+    color: #3e90b7;
+    cursor: pointer;
+    width: 100%;
+    display: inline-flex;
+    padding: 12px 25px;
+    text-align: left;
+}
+.cf-mvl-treenav-no-in{
+    color: #3e90b7;
+    cursor: pointer;
+    width: 100%;
+    display: inline-flex;
+    padding: 12px 25px;
+    text-align: left;   
+}
+.cf-mvl-menu a{
+    text-decoration: none;
+}
+.cf-mvl-treenav-in-title{
+    background-color: #f2f2f2;
+    color: #333;
+    padding-bottom: 5px;
+    padding-top: 5px;   
+}
+.cf-mvl-menu{
+    padding-left: 0px;
+    margin-bottom: 0px;
+}   
+#cf-primary-treenav .cf-mvl-menu li, #cf-secondary-treenav .cf-mvl-menu li{
+    border-bottom: 1px solid #ececec;
+}
+#cf-mvl-treenav>div>div>li span, #cf-mvl-treenav>div>ul>li span {
+    border-color: #1A9AC4;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    display: inline-flex;
+    height: 12px;
+    margin-top: 6px;
+    transform: rotate(45deg);
+    width: 12px;
+    margin-left: auto;
+}
+#cf-primary-treenav{
+    z-index:1;
+}
+#cf-secondary-treenav{
+    z-index:1;
+    left:-100%;
+}
+#cf-secondary-treenav.active{
+    left:0%;
+}
+#cf-primary-treenav.subactive{
+    left:-100% !important;
+}
+.cf-back-treenav{
+    width: 100%;
+    display: inline-flex;
+    padding: 11px 25px;
+    text-align: left;
+    border-bottom: 1px solid #ececec;    
+    cursor: pointer;
+}
+.cf-back-span{
+    border-color: #1A9AC4;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    display: inline-flex;
+    height: 12px;
+    margin-top: 6px;
+    transform: rotate(225deg);
+    width: 12px;    
+}
+.cf-back-title{
+    margin:auto; 
+}
+.inactive{
+    display: none;
+}
+
+.cf-mvl-treenav-in.active{
+    background-color: #f2f2f2;
+    border-left: 5px solid #049fd9;
+    color: #1A9AC4;
+}
+
+/*register.bade.php*/
+
+
+div.g-recaptcha div{
+    margin: auto;
+} 
+.fs-08{
+    font-size: 0.8rem;
+}
+    .main-form-login{
+        margin-top: 0px;
+    }
+    .panel-heading {
+    text-align: center;    
+    padding: 3px 10px;
+    border-bottom: 1px solid #d3e0e9;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;  
+    margin-bottom: 15px;
+
+    }  
+    .panel-body{
+    text-align: center;    
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;  
+    margin-bottom: 10px;
+
+    }  
+    
+.cf-main-logo-name {
+    font-size: 1.6rem;
+    margin-bottom: -4px;
+    color: #3e90b7;    
+}
+
+.cf-main-logo-slogan {
+    font-size: 0.8rem;
+    color: #333;
+}    
+.cf-main-navbar-brand{
+display: none !important;
+}    
+div.horizontalText::before, div.horizontalText::after {
+    width: 50%;
+    top: 51%;
+    overflow: hidden;
+    height: 1px;
+    background-color: #d0d0d0;
+    content: '\a0';
+    position: absolute;
+}    
+div.horizontalText::before{
+margin-left: -52%;
+    text-align: right;
+
+}
+div.horizontalText::after{
+    margin-left: 2%;  
+
+}
+.horizontalText{
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    position: relative;
+    color: #ababab;
+    font-size: 14px;
+    font-family: gotham, helvetica, arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    overflow: hidden;
+}
+.color-personalized{
+    color: #3e90b7;
+}
+.btn-personalized{
+    width: 100%;
+    color: #fff;
+    background-color: #3e90b7;
+    border-color: #3e90b7;    
+    cursor: pointer;
+}
+.link-personalized{
+    color: #3e90b7;
+    text-decoration: none;
+    margin-top: 5px;    
+}
+.link-personalized:hover{
+    color: #333;
+    text-decoration: none;
+    margin-top: 5px;    
+}
+.text-center{
+    text-align: center;
+}
+.arrow-down{
+    border-color: #1A9AC4;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    content: "";
+    display: inline-flex;
+    height: 12px;
+    margin-right: 6px;
+    transform: rotate(135deg);
+    width: 12px;
+}
+.arrow-up{
+    border-color: #1A9AC4;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    content: "";
+    display: inline-flex;
+    height: 12px;
+    margin-right: 6px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
+.cf-btn-google{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;    
+}
+.cf-btn-facebook{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #4267b2;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;    
+}
+.cf-btn-twitter{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #1da1f2;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;    
+}
+.cf-link-none:hover{
+    text-decoration: none;
+}
+.inactive{
+    display: none;
+}
+.cf-display-panel-social-login{
+    cursor: pointer;
+}
+.text-11-rem{
+    font-size: 1.1rem
+}
+    .validate_msg{
+        margin-bottom: 0px;
+        font-size: 13px;
+        color:#FC642D;
+    }
+    .validate_ok{
+        font-size: 13px;    
+        text-align: left;
+        display: none;
+         margin-top: -10px;
+             margin-bottom: 5px;
+    }
+    .msg_ok{
+        color:#00A699 !important;
+    }
+    .validate_pass{
+
+        text-align: left;
+            margin-top: -10px;
+                margin-bottom: 5px;
+                padding-bottom: 10px;
+        display: none;*/
+    }
+    .ocultar{
+        display: none !important;
+    }
+    .mostrar{
+        display: block !important;
+    }
+    #tos_signup{
+        text-align:     center; 
+        font-size: 75%;
+    }
+    .validate_msg>.fa-times{
+        display:    inline-block;
+    }
+    .validate_msg>.fa-check{
+        display:    none;
+    }
+    .msg_ok>.fa-times{
+        display:    none;
+
+    }
+    .msg_ok>.fa-check{
+        display:    inline-block;
+
+    }
+@media screen and (min-width: 576px){
+    .cf-treenav{
+        width: 50%;
+    }
+    #cf-secondary-treenav.active{
+    left:50%;
+    }
+    #cf-primary-treenav.subactive{
+    left:0% !important;
+    }   
+/*register.bade.php*/
+.cf-main-logo-name {
+    font-size: 1.4rem;
+    margin-bottom: -5px;
+}
+.cf-main-logo-name {
+    font-size: 2rem;
+    margin-bottom: -3px;
+    color: #3e90b7;
+}  
+.cf-main-logo-slogan {
+    font-size: 1rem;
+    color: #333;
+}
+.cf-main-navbar-brand{
+display: inline-flex !important;
+}
+.cf-main-navbar-brand-mvl{
+display: none;
+}
+    .main-form-login{
+        margin-top: 20px;
+        border: 1px solid #d3e0e9; 
+        border-radius:5px 
+
+    }
+    .panel-heading {
+    text-align: center;    
+    padding: 6px 15px;
+    border-bottom: 1px solid #d3e0e9;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;  
+    margin-bottom: 20px;
+    } 
+
+}
+
+@media screen and (min-width: 960px){
+    .cf-treenav{
+        width: 50%;
+    }
+    #cf-mvl-treenav{
+        display: none !important;;
+    }   
+}
+
+
+.submenu-container{
+    background-color: white;
+    position: absolute;
+    top: 75px;  
+    border: 1px solid #ddd;
+    border-top: 2px solid #ddd;
+    border-top: 0;    
+}
+.submenu-container li{
+    list-style: none;
+    border-bottom: 1px solid #f2f2f2;
+}   
+.submenu-section{
+    padding: 10px;
+    min-width: 240px;
+    max-width: 300px;
+    border-left: 1px solid #ddd;
+}
+.cf-dsk-treenav-in{
+    color: #3e90b7;
+    cursor: pointer;
+    width: 100%;
+    display: inline-flex;
+    padding: 12px 25px;
+    text-align: left;
+}
+.cf-dsk-treenav-no-in{
+    color: #3e90b7;
+    width: 100%;
+    display: inline-flex;
+    padding: 8px 25px;
+    text-align: left;   
+}
+.cf-dsk-menu a{
+    text-decoration: none;
+}
+.cf-dsk-treenav-in-title{
+    background-color: #f2f2f2;
+    color: #333;
+    padding-bottom: 5px;
+    padding-top: 5px;   
+}
+.cf-dsk-menu{
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.cf-dsk-menu li{
+    padding-left: 0px;
+    margin-bottom: 0px;
+}   
+.cf-dsk-main-menu>ul>li>div.submenu-container {
+    display: none;
+}
+.cf-dsk-main-menu>ul>li:hover>div.submenu-container {
+    display: flex;
+    border-top: 2px solid #f2f2f2;    
+}
+.text-submenu{
+    padding: 15px;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+.text-submenu a{
+    color: #3e90b7;
+    font-size: 1rem;
+}
+
+.main-form-login{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .panel-heading {
+    text-align: center;    
+    padding: 3px 10px;
+    border-bottom: 1px solid #d3e0e9;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;  
+    margin-bottom: 15px;
+
+    }  
+    .panel-body{
+    text-align: center;    
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;  
+    margin-bottom: 10px;
+
+    }  
+    
+.cf-main-logo-name {
+    font-size: 1.6rem;
+    margin-bottom: -4px;
+    color: #3e90b7;    
+}
+
+.cf-main-logo-slogan {
+    font-size: 0.8rem;
+    color: #333;
+}    
+.cf-main-navbar-brand{
+display: none !important;
+}    
+div.horizontalText::before, div.horizontalText::after {
+    width: 50%;
+    top: 51%;
+    overflow: hidden;
+    height: 1px;
+    background-color: #d0d0d0;
+    content: '\a0';
+    position: absolute;
+}    
+div.horizontalText::before{
+margin-left: -52%;
+    text-align: right;
+
+}
+div.horizontalText::after{
+    margin-left: 2%;  
+
+}
+.horizontalText{
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    position: relative;
+    color: #ababab;
+    font-size: 14px;
+    font-family: gotham, helvetica, arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    overflow: hidden;
+}
+.color-personalized{
+    color: #3e90b7;
+}
+.btn-personalized{
+    width: 100%;
+    color: #fff;
+    background-color: #3e90b7;
+    border-color: #3e90b7;    
+    cursor: pointer;
+}
+.link-personalized{
+    color: #3e90b7;
+    text-decoration: none;
+    margin-top: 5px;    
+}
+.link-personalized:hover{
+    color: #333;
+    text-decoration: none;
+    margin-top: 5px;    
+}
+.text-center{
+    text-align: center;
+}
+.arrow-down{
+    border-color: #1A9AC4;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    content: "";
+    display: inline-flex;
+    height: 12px;
+    margin-right: 6px;
+    transform: rotate(135deg);
+    width: 12px;
+}
+.arrow-up{
+    border-color: #1A9AC4;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    content: "";
+    display: inline-flex;
+    height: 12px;
+    margin-right: 6px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
+.cf-btn-google{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;    
+}
+.cf-btn-facebook{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #4267b2;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;    
+}
+.cf-btn-twitter{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #1da1f2;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;    
+}
+.cf-link-none:hover{
+    text-decoration: none;
+}
+    .inactive{
+        display: none;
+    }
+    .cf-display-panel-social-login{
+        cursor: pointer;
+    }
+        .text-11-rem{
+        font-size: 1.1rem
+    }
+@media screen and (min-width: 576px){
+.cf-main-logo-name {
+    font-size: 1.4rem;
+    margin-bottom: -5px;
+}
+.cf-main-logo-name {
+    font-size: 2rem;
+    margin-bottom: -3px;
+    color: #3e90b7;
+}  
+.cf-main-logo-slogan {
+    font-size: 1rem;
+    color: #333;
+}
+.cf-main-navbar-brand{
+display: inline-flex !important;
+}
+.cf-main-navbar-brand-mvl{
+display: none;
+}
+    .main-form-login{
+        margin-top: 20px;
+        border: 1px solid #d3e0e9; 
+        border-radius:5px 
+
+
+    }
+    .panel-heading {
+    text-align: center;    
+    padding: 6px 15px;
+    border-bottom: 1px solid #d3e0e9;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;  
+    margin-bottom: 20px;
+    } 
+

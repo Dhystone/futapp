@@ -88,6 +88,13 @@ return [
     'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'The :attribute format is invalid.',
 
+/*
+    |--------------------------------------------------------------------------
+    | Personal messages
+    |--------------------------------------------------------------------------
+*/
+
+    'fix_errors'  => 'Please, Fix the following errors:',
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Language Lines
@@ -115,7 +122,10 @@ return [
     | of "email". This simply helps us make messages a little cleaner.
     |
     */
-
-    'attributes' => [],
+    
+        'attributes' => [
+        'email'=>'e-mail',
+        'password'=>'password'
+    ],
 
 ];

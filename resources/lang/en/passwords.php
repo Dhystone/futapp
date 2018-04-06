@@ -19,4 +19,11 @@ return [
     'token' => 'This password reset token is invalid.',
     'user' => "We can't find a user with that e-mail address.",
 
+    'username_password' => 'Passwords must be at least six characters and match the confirmation.',
+    'username_reset' => 'Your password has been reset!',
+    'username_sent' => 'We have sent your password reset link!',
+    'username_token' => 'This password reset token is invalid.',
+    'username_user' => "We can't find a user with that username address.",
+
+
 ];

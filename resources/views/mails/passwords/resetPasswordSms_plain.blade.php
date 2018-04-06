@@ -1,0 +1,1 @@
+Enlace Activación: {{ url(config('app.url').route('password.reset', $token, false)) }}
